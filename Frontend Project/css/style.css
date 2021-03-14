@@ -235,13 +235,13 @@
 }
 
 @media screen and (max-width: 769px) {
-  .panel-heading {
+  .card-header {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 1025px) {
-  .panel-heading {
+  .card-header {
     width: 100%;
   }
 }
@@ -300,6 +300,16 @@
 @media screen and (max-width: 769px) {
   .space {
     height: 30px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .col-lg-3 {
+    display: none !important;
+  }
+  .col-lg-9 {
+    width: 1372px;
+    padding: 200px !important;
   }
 }
 
@@ -523,12 +533,6 @@ body .header .containerr .roww .item-center .menu .menu-main li .sub-menu ul .li
   font-size: 14px;
   font-weight: 400;
   color: #17a8a3;
-}
-
-body .header .containerr .roww .item-center .menu .menu-main li .sub-menu .text-left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16%;
-          flex: 0 0 16%;
 }
 
 body .header .containerr .roww .item-center .menu .menu-main li .sub-menu .text-center {
@@ -1488,7 +1492,6 @@ body .products-slider .owl-item:hover .img-item-2 {
 }
 
 body .container-fluid {
-  height: 700px;
   margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2198,6 +2201,7 @@ footer .footer-middle .container .row .item-3 .social-icons i {
   font-size: 2.33333em;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  padding-left: 35px;
 }
 
 .contactUs .container-fluid .secondbtn {
@@ -2314,19 +2318,7 @@ h3 {
 }
 
 .page-faq .help .faq-contact .message_us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-right: 30px;
 }
 
 .page-faq .help .faq-contact .message_us i {
@@ -2374,6 +2366,8 @@ h3 {
 .page-faq .page-sidebar {
   width: 0;
   height: 150vh;
+  top: 40%;
+  left: 0;
   position: fixed;
   margin-left: 0;
   background-color: white;
@@ -2593,27 +2587,27 @@ h3 {
   padding-left: 6px;
 }
 
-.page-faq .questions .theme-questions {
+.page-faq .questions .faqs-paragraph {
   margin-bottom: 100px;
 }
 
-.page-faq .questions .theme-questions .theme-questions_title {
+.page-faq .questions .faqs-paragraph .faqs-paragraph_title {
   margin-left: 6px;
   margin-right: 0;
 }
 
-.page-faq .questions .theme-questions .theme-questions_title h3 {
+.page-faq .questions .faqs-paragraph .faqs-paragraph_title h3 {
   margin-bottom: 15px;
 }
 
-.page-faq .questions .theme-questions .container {
+.page-faq .questions .faqs-paragraph .container {
   background-color: white;
   width: 100%;
   padding-left: 0;
   border: none;
 }
 
-.page-faq .questions .theme-questions .container .panel {
+.page-faq .questions .faqs-paragraph .container .card {
   background-color: white;
   border: none;
   padding: 0;
@@ -2622,14 +2616,14 @@ h3 {
   color: #807e7e;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading {
+.page-faq .questions .faqs-paragraph .container .card .card-header {
   background-color: white;
   width: 100%;
   padding-left: 0;
   border: none;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2648,7 +2642,7 @@ h3 {
   margin: 0;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .btn-coll {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .btn-coll {
   width: 100%;
   height: 50px;
   display: -webkit-box;
@@ -2673,7 +2667,7 @@ h3 {
   vertical-align: middle;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .btn-coll .paragraph {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .btn-coll .paragraph {
   width: 100%;
   text-align: left;
   vertical-align: middle;
@@ -2681,24 +2675,24 @@ h3 {
   line-height: 2;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .btn-coll .paragraph .space {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .btn-coll .paragraph .space {
   height: 25px;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-3,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-4,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-5,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-6,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-7,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-8,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-9,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-10,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-11,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-12,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-13,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-14,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-15,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-16 {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-3,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-4,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-5,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-6,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-7,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-8,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-9,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-10,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-11,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-12,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-13,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-14,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-15,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-16 {
   height: 100%;
   padding-right: 15px;
   padding-top: 12px;
@@ -2708,38 +2702,38 @@ h3 {
 }
 
 @media screen and (max-width: 1025px) {
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-3,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-4,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-5,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-6,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-7,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-8,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-9,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-10,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-11,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-12,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-13,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-14,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-15,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-16 {
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-3,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-4,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-5,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-6,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-7,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-8,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-9,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-10,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-11,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-12,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-13,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-14,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-15,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-16 {
     margin-top: 25px;
   }
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-3 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-4 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-5 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-6 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-7 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-8 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-9 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-10 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-11 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-12 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-13 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-14 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-15 p,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .card-16 p {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-3 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-4 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-5 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-6 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-7 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-8 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-9 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-10 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-11 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-12 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-13 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-14 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-15 p,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .card-16 p {
   height: 22px;
   width: 70px;
   margin: 3px 0;
@@ -2753,20 +2747,20 @@ h3 {
   text-align: center;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-3,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-4,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-5,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-6,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-7,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-8,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-9,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-10,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-11,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-12,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-13,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-14,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-15,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-16 {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-3,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-4,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-5,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-6,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-7,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-8,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-9,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-10,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-11,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-12,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-13,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-14,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-15,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-16 {
   text-align: right;
   cursor: pointer;
   height: 21px;
@@ -2774,33 +2768,33 @@ h3 {
   width: 0.3%;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-3:before, .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-3:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-4:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-4:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-5:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-5:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-6:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-6:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-7:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-7:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-8:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-8:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-9:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-9:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-10:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-10:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-11:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-11:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-12:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-12:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-13:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-13:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-14:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-14:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-15:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-15:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-16:before,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-16:after {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-3:before, .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-3:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-4:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-4:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-5:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-5:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-6:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-6:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-7:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-7:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-8:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-8:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-9:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-9:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-10:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-10:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-11:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-11:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-12:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-12:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-13:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-13:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-14:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-14:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-15:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-15:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-16:before,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-16:after {
   background: #706e6e;
   content: "";
   height: 2px;
@@ -2814,94 +2808,94 @@ h3 {
   transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-3:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-4:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-5:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-6:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-7:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-8:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-9:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-10:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-11:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-12:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-13:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-14:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-15:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-16:after {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-3:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-4:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-5:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-6:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-7:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-8:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-9:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-10:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-11:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-12:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-13:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-14:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-15:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-16:after {
   -webkit-transform-origin: center;
           transform-origin: center;
 }
 
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-3.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-4.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-5.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-6.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-7.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-8.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-9.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-10.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-11.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-12.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-13.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-14.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-15.plus:after,
-.page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-16.plus:after {
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-3.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-4.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-5.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-6.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-7.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-8.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-9.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-10.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-11.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-12.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-13.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-14.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-15.plus:after,
+.page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-16.plus:after {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
 @media screen and (max-width: 1025px) {
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-3,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-4,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-5,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-6,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-7,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-8,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-9,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-10,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-11,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-12,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-13,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-14,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-15,
-  .page-faq .questions .theme-questions .container .panel .panel-heading h4 .toggle-16 {
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-3,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-4,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-5,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-6,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-7,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-8,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-9,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-10,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-11,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-12,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-13,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-14,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-15,
+  .page-faq .questions .faqs-paragraph .container .card .card-header h4 .toggle-16 {
     margin-top: 25px;
     margin-left: 0;
   }
 }
 
-.page-faq .questions .theme-questions .container .panel-body {
+.page-faq .questions .faqs-paragraph .container .card-body {
   border-left: none;
   padding-left: 6px;
   margin-bottom: 7px;
 }
 
-.page-faq .questions .theme-questions .container .panel-body p {
+.page-faq .questions .faqs-paragraph .container .card-body p {
   margin: 22px 0 43px 0;
   line-height: 1.8;
 }
 
-.page-faq .questions .theme-questions .container .panel-body p a {
+.page-faq .questions .faqs-paragraph .container .card-body p a {
   text-decoration: none;
   color: black;
 }
 
-.page-faq .questions .theme-questions .container .panel-body p a:hover {
+.page-faq .questions .faqs-paragraph .container .card-body p a:hover {
   color: #6ebbbb;
 }
 
-.page-faq .questions .theme-questions .container .panel-body p span {
+.page-faq .questions .faqs-paragraph .container .card-body p span {
   margin-top: 30px;
 }
 
 @media screen and (max-width: 1025px) {
-  .page-faq .questions .theme-questions .container .panel-body p {
+  .page-faq .questions .faqs-paragraph .container .card-body p {
     line-height: 2;
     padding-top: 30px;
   }
 }
 
-.page-faq .questions .theme-questions .container .panel-body span {
+.page-faq .questions .faqs-paragraph .container .card-body span {
   margin: 20px 0;
 }
 
@@ -2909,4 +2903,563 @@ h3 {
   text-align: right;
   margin-top: 35px;
   color: grey;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.container .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.container .breadcrumbs {
+  padding-top: 20px;
+  background-color: white;
+}
+
+.container .breadcrumbs .breadcrumb-list {
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #787878;
+}
+
+.container .breadcrumbs .breadcrumb-list li {
+  list-style: none;
+}
+
+.container .breadcrumbs .breadcrumb-list .breadcrumb-items {
+  padding: 5px 0;
+  line-height: 1;
+  vertical-align: top;
+  display: inline;
+  text-transform: unset;
+}
+
+.container .breadcrumbs .breadcrumb-list .breadcrumb-items span {
+  margin: 0 7px;
+}
+
+.container .breadcrumbs .breadcrumb-list .breadcrumb-items a {
+  color: #787878;
+  font-size: inherit;
+  text-decoration: none;
+  margin: 0 7px;
+}
+
+.container .blog-news {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: unset;
+  line-height: 1.3;
+  padding: 0;
+  font-size: 34px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.container .sidebar-search {
+  width: 250px;
+  margin: 0 0 30px 0;
+}
+
+.container .sidebar-search .search-heading {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.container .sidebar-search .search-input {
+  position: relative;
+}
+
+.container .sidebar-search .search-input .form-control {
+  border: 30px 10px;
+}
+
+.container .sidebar-search .search-input input {
+  color: #787878;
+  border: 1px solid;
+  padding-right: 30px;
+  height: 45px;
+}
+
+.container .sidebar-search .search-input .search-icon {
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.container .sidebar-blog {
+  width: 250px;
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+}
+
+.container .sidebar-blog .sidebar-content .content-list {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.container .sidebar-blog .sidebar-content .content-list .content-items {
+  margin-bottom: 8px;
+  vertical-align: top;
+}
+
+.container .sidebar-blog .sidebar-content .content-list .content-items a {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #787878;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.container .sidebar-blog .sidebar-content .content-list .content-items a:hover {
+  color: #464242;
+}
+
+.container .sidebar-blog .blog-heading {
+  margin: 27px 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .recentSection .recent-blog {
+  width: 250px;
+  margin: 20px 0 30px 0;
+  border-bottom: 1px solid black;
+}
+
+.container .recentSection .recent-blog .recentPosts-list .recent-items {
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+}
+
+.container .recentSection .recent-blog .recentPosts-list .recent-items .recent-posts {
+  padding-left: 20px;
+}
+
+.container .recentSection .recent-blog .recentPosts-list .recent-items .recent-posts h5 a {
+  color: #1e1e1e;
+  line-height: 24px;
+  padding-top: 3px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.container .recentSection .recent-blog .recentPosts-list .recent-items .recent-posts p {
+  display: inline-block;
+  line-height: 28px;
+  font-style: italic;
+  margin: 3px 0 0;
+  color: #787878;
+  font-size: 14px;
+}
+
+.container .recentSection .recent-blog .recentPosts-list .recent-items a .recent-img {
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  border-radius: 10%;
+}
+
+.container .recentSection .recent-blog .recent-heading {
+  margin: 27px 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .sellersSection .best-sellers {
+  width: 250px;
+  margin: 20px 0 30px 0;
+  border-bottom: 1px solid black;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-img a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content {
+  display: inline-block;
+  display: block;
+  padding-left: 20px;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-details a {
+  text-decoration: none;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-details .productDetails {
+  font-size: 13px;
+  position: relative;
+  font-weight: 500;
+  line-height: 15px;
+  color: #17a8a3;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-variant {
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-variant .beige-variant,
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-variant .beige-variant2 {
+  display: block;
+  background-color: beige;
+  width: 19px;
+  height: 19px;
+  line-height: 15px;
+  margin: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 0px 1px #e7e7e7;
+          box-shadow: 0 0 0px 1px #e7e7e7;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-variant .grey-variant {
+  display: block;
+  background-color: grey;
+  width: 19px;
+  height: 19px;
+  line-height: 15px;
+  margin-bottom: 5px;
+  margin: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 0px 1px #e7e7e7;
+          box-shadow: 0 0 0px 1px #e7e7e7;
+  margin-left: 5px;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-variant .white-variant {
+  display: block;
+  background-color: white;
+  border: 1px solid #dadada;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  margin: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+  -webkit-box-shadow: 0 0 0px 1px #e7e7e7;
+          box-shadow: 0 0 0px 1px #e7e7e7;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-variant .lightCoral-variant {
+  display: block;
+  background-color: lightcoral;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  margin: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #fff;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0 0 0px 1px #e7e7e7;
+          box-shadow: 0 0 0px 1px #e7e7e7;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-sale {
+  display: block;
+  color: #787878;
+  line-height: 24px;
+  padding-top: 3px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-sale .on-sale {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-sale .actual-price {
+  display: inline-block;
+  font-family: "300" "Poppins", sans-serif;
+  font-size: 14px;
+  margin-left: 4px;
+  color: #ff5656;
+  display: inline-block;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-sale p {
+  display: inline-block;
+  padding-left: 4px;
+}
+
+.container .sellersSection .best-sellers .seller-list .seller-items .product-content .product-title a {
+  color: #1e1e1e;
+  line-height: 24px;
+  padding-top: 3px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.container .sellersSection .best-sellers .sellersHeading {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+  margin: 27px 0;
+}
+
+.container .sellersSection .best-sellers .sellersHeading a {
+  text-decoration: none;
+  position: absolute;
+  font-size: 12px;
+  color: #17a8a3;
+  right: 0;
+  border-bottom: 1px solid;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.container .herbalSection .herbal-tea {
+  width: 250px;
+  margin: 20px 0 30px 0;
+  border-bottom: 1px solid black;
+}
+
+.container .herbalSection .herbal-tea img {
+  margin-bottom: 40px;
+}
+
+.container .customSection .custom-block {
+  width: 250px;
+  margin: 20px 0 30px 0;
+}
+
+.container .customSection .custom-block .block-heading {
+  margin: 27px 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .customSection .custom-block .block-content p {
+  line-height: 24px;
+  color: #787878;
+  margin: 0 0 15px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.container #right-side {
+  margin: 0;
+  padding: 0;
+}
+
+.container #right-side .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #right-side .article .single-team {
+  position: relative;
+}
+
+.container #right-side .article .single-team::before {
+  content: '';
+  position: absolute;
+  width: 1015px;
+  height: 740px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
+  background: linear-gradient(to top, #000, transparent);
+  z-index: 2;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.container #right-side .article .single-team img {
+  width: 100%;
+  padding-right: 55px;
+}
+
+.container #right-side .article .single-team img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.container #right-side .article .single-team:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.container #right-side .article .text {
+  margin: 30px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.container #right-side .article .text ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container #right-side .article .text ul li {
+  font-size: 12px;
+  font-weight: 350;
+  color: #6e6d6d;
+  line-height: 2;
+}
+
+.container #right-side .article .text ul li h3 {
+  margin: 20px 0;
+}
+
+.container #right-side .article .text ul li h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+.container #right-side .article .text ul li h3 a:hover {
+  color: #17a2b8;
+}
+
+.container #right-side .article .text ul li p a {
+  color: #17a2b8;
+}
+
+.container #right-side .article .text ul li span {
+  margin: 0 10px;
+}
+
+.container #right-side .page_switcher {
+  margin-top: 30px;
+}
+
+.container #right-side .page_switcher ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: right;
+  list-style: none;
+}
+
+.container #right-side .page_switcher ul li {
+  text-align: center;
+  margin: 7px;
+}
+
+.container #right-side .page_switcher ul li a {
+  font-size: 13px;
+  padding: 10px 17px;
+  text-decoration: none;
+  color: black;
+}
+
+.container #right-side .page_switcher ul li .first, .container #right-side .page_switcher ul li .four {
+  border: 0.5px solid #d8d5d5;
+  cursor: pointer;
+}
+
+.container #right-side .page_switcher ul li .first:hover, .container #right-side .page_switcher ul li .four:hover {
+  background-color: #17a2b8;
+  color: #c7c2c2;
+  border: none;
+}
+
+.container #right-side .page_switcher ul li .second {
+  background-color: #f8f9fa;
+  padding: 11px 20px;
+}
+
+.container #right-side .page_switcher ul li .third {
+  cursor: pointer;
+}
+
+.container #right-side .page_switcher ul li .third:hover {
+  color: #17a2b8;
 }
