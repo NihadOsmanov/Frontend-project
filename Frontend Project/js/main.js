@@ -115,8 +115,10 @@ function validation() {
     return false;
   }
 }
+//contact us
 
 function validationSecond() {
+
   let email = document.getElementById("email").value;
   let textarea = document.getElementById("textarea").value;
 
@@ -131,6 +133,7 @@ function validationSecond() {
       "No account found with that email.";
     document.getElementById("textarea").style.borderColor = "red";
   }
+  return false;
 }
 
 //faq start
