@@ -51,8 +51,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Project</title>
   </head>
   <body>
     <!-- header start-->
@@ -330,85 +330,431 @@
     </header>
     <!-- header end-->
 
-    <!-- Main start-->
-    <main id="mainContent">
-      <div class="bredcrumb-wrapper">
-        <div class="container">
-          <ul class="bredcrumb">
-            <li class="bredcrumb-item">
-              <a href="#">Home </a><span> > </span>
-            </li>
-            <li class="bredcrumb-item">
-              <span>Account</span>
-            </li>
-          </ul>
+    <!-- Product start -->
+    <section class="js-focus-hidden">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <ul class="breadcrumb-list">
+              <li class="breadcrumb-items">
+                <a href="#">Home</a>
+                <i class="fas fa-chevron-right"></i>
+              </li>
+              <li class="breadcrumb-items">
+                <a href="#">Home Page</a>
+                <i class="fas fa-chevron-right"></i>
+              </li>
+              <li class="breadcrumb-items">
+                <p>Lamcorper ostique amattis drosele</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="container">
-        <div class="section-header text-left">
-          <h2>My Account</h2>
-        </div>
-        <div class="login-page">
-          <div class="row justify-content-between">
-            <div class="col-12 col-sm-6 col-md-5 mb-5">
-              <div id="CustomerLoginForm" class="form-vertical">
-                <h3>Reset Your Password</h3>
-                <p>We will send you an email to reset your password</p>
-                <form id="customer-login" onsubmit="return validation()">
-                  <label for="email">Email*</label><br />
-                  <input type="email" name="email" id="email" /><br /><br />
-                  <span id="mail" class="text"></span><br /><br />
-                  <div class="button-group">
-                    <input
-                      type="submit"
-                      class="btn btn-secondary"
-                      value="LOGIN"
-                    /><br />
-                    <input
-                      type="submit"
-                      class="btn btn-primary"
-                      value="CANCEL"
-                    />
-                  </div>
-                </form>
+    </section>
+
+    <section class="zoom-product">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1">
+            <div class="thumb-nails-wrapper">
+              <div class="first-thumbnails">
+                <a href="#">
+                  <img
+                    src="./image/tea-9_75b9fcd5-45b5-4340-b0c8-8c7d827311fb.webp"
+                    width="97"
+                    height="97"
+
+                  />
+                </a>
+              </div>
+              <div class="second-thumbnails">
+                <a href="#">
+                  <img
+                    src="./image/tea-6_3ae69650-1349-4942-8799-4bb786e9019d.webp"
+                    width="97"
+                    height="97"
+                  />
+                </a>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-5 wrapper">
-              <div class="new-customer-wrapper">
-                <h3>New Customer</h3>
-                <p>Register Account</p>
-                <p>
-                  By creating an account you will be able to shop faster, be up
-                  to date on an order's status, and keep track of the orders you
-                  have previously made.
-                </p>
-                <form id="register-form">
-                  <label for="text">First Name</label><br />
-                  <input type="text" name="fname" id="text" /><br /><br />
-                  <label for="text">Last Name</label><br />
-                  <input type="text" name="lname" id="text" /><br /><br />
-                  <label for="email">Email*</label><br />
-                  <input type="email" name="email" id="email" /><br /><br />
-                  <label for="pass">Password*</label><br />
-                  <input type="password" name="pass" id="pass" /><br /><br />
-                  <div class="button-group">
-                    <input
-                      type="submit"
-                      class="btn btn-secondary"
-                      value="CREATE ACCOUNT"
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="wrapper-image">
+              <a href="#">
+                <div class="zoom-wrapper-img">
+                  <div class="single-wrapper-image" id="single-wrapper-image">
+                    <img
+                      src="./image/tea-6_3ae69650-1349-4942-8799-4bb786e9019d.webp"
+                      width="729"
+                      height="729"
+                      class="zoom-img"
+                    style="max-width: 100%; "
                     />
                   </div>
-                </form>
+                  <div
+                    class="single-wrapper-image-second"
+                    id="single-wrapper-image-second"
+                  >
+                    <img
+                      src="./image/tea-9_75b9fcd5-45b5-4340-b0c8-8c7d827311fb.webp"
+                      width="729"
+                      height="729"
+                      class="zoom-img"
+                    />
+                  </div>
+                </div>
+              </a>
+              <div class="block-custom text-center" style="padding-top: 25px">
+                <h3 class="title">Custom CMS Block</h3>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  risus leo, elementum in malesuada an darius ut augue. Cras sit
+                  amet lectus et justo feugiat euismod sed non erat. Nulla non
+                  felis id sit amet eros. Nam suscipit mollis tellus vel
+                  malesuada.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-5">
+            <div class="product-details">
+              <form
+                action="#"
+                method="post"
+                id="product-detail-content"
+              >
+                <div class="product-wrapper" data-id="66">
+                  <h3 id="product-title">Lamcorper ostique amattis drosele</h3>
+                  <div class="rev">
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <a href="#">1 review</a>
+                    </p>
+                    <a href="#"
+                      ><i class="fas fa-fire-alt"></i> 3 sold in last 16
+                      hours</a
+                    >
+                  </div>
+                </div>
+                <div class="product-meta">
+                  <div class="item-product-1">
+                    <label>Brand:</label>
+                    <span><a href="#">Donatello</a></span>
+                  </div>
+                  <div class="item-product-2">
+                    <label>Product code:</label>
+                    <span><a href="#">RT-0026EARL</a></span>
+                  </div>
+                  <div class="item-product-3">
+                    <label>Availability:</label>
+                    <span><a href="#">20 In stock</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <p>$69.00</p>
+                </div>
+                <div class="product-decription">
+                  <p>
+                    Sample heading title Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Duis risus leo, elementum in malesuada an
+                    darius ut augue. Cras...
+                  </p>
+                </div>
+                <div class="selector-wrapper">
+                  <p>Size* <span>Small</span></p>
+                  <div class="opt">
+                    <a href="#">Small</a>
+                  </div>
+                </div>
+                <div class="controls-group">
+                  <label for="quality">Quantity:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="quality"
+                    id="qty"
+                    value="1"
+                    min="1"
+                  />
+                  <input
+                    type="hidden"
+                    name="priceForOne"
+                    id="priceForOne"
+                    value="69.00"
+                  />
+                  <p>Subtotal <span id="total">$69.00</span></p>
+                </div>
+                <div class="buttons-group">
+                  <div class="col-md-6 col-sm-12">
+                    <button
+                      type="submit"
+                      id="addcart"
+                      class="btn btn-pro btn-cart"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <button
+                      type="button"
+                      id="addwish"
+                      class="btn btn-pro btn-wish wish"
+                    >
+                      <i class="far fa-heart"></i> Add to Wishlist
+                    </button>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  href="#"
+                  class="payment-button"
+                  title="Please first agree terms & conditions"
+                  disabled
+                >
+                  Buy it now
+                </button>
+                <div class="form-check termcon">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="1"
+                    id="term"
+                  />
+                  <label class="form-check-label" for="term">
+                    <a href="#"
+                      >I agree with the <span>Terms & conditions</span></a
+                    >
+                  </label>
+                </div>
+                <p class="view-info">112 customers are viewing this product</p>
+              </form>
+              <div class="btn-elements">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="norton">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0418/1904/6039/files/security.jpg?v=1596164706"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!-- Main end-->
+    </section>
+
+    <!--Section slick-track start-->
+    <section class="slick-track">
+      <div class="container-fluid" style="justify-content: center">
+        <div class="col-md-6 col-lg-3">
+          <div class="slick-slide">
+            <img src="./icons/slick-icon-1.webp" alt="" />
+            <h3 class="title">Quantity</h3>
+            <div class="description">
+              <p>Use 2gr of tea per 150ml of water.</p>
+              <a href="#">How to taste tea </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="slick-slide">
+            <img src="./icons/slick-icon-2.webp" alt="" />
+            <h3 class="title">Temperature</h3>
+            <div class="description">
+              <p>For the optimum infusion use 85°C <185°F> water.</p>
+              <p>If you like milk, use water at 100°C <212°F></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="slick-slide">
+            <img src="./icons/slick-icon-3.webp" alt="" />
+            <h3 class="title">Brew Time</h3>
+            <div class="description">
+              <p>Infuse for 1 - 3 minutes, tasting regularly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="slick-slide">
+            <img src="./icons/slick-icon-4.webp" alt="" />
+            <h3 class="title">Enjoy</h3>
+            <div class="description">
+              <p>Sip hot or top with ice for iced tea</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section slick-track end-->
+
+    <!--Tea Bridge start-->
+    <section class="teaBridge">
+      <div class="container-fluid">
+        <img src="./image/03b-min.webp" alt="" />
+        <div class="custom-block--title">
+          <h4>THE TEA BRIDGE</h4>
+          <h2>Cosmo Milancelos</h2>
+          <p>
+            Sedcus faucibus an delos sullamcorper mattis drostique des commodo
+            pharetras merui loremos. <br /><br />
+            Nam tempus turpis at metus scelerisque placerat nullam deumantos
+            solicitud felis. Pellentesque diam dolor, cosmo delementum etos
+            lobortis des mollis ut risus.
+          </p>
+        </div>
+        <div class="rte">
+          Phasellus volutpat magna id mauris sodales et ornare urna molestie.
+          Mauris non sem tincidunt, hendrerit nisi quis honcus felis.
+          Suspendisse tempus mi durna in mattis nisl egestas quis. Proin nisi
+          justo consectetur sed lacus an bibendum commodo diam. Praesent
+          vulputate arcu eros quis accumsan odio malesuada at. Nulla vel ante
+          magna. Cras ultricies nulla porttitor metus cursus malesuada. Sed
+          convallis tempor ante ac semperos. Duis an turpis de nisl ultricies
+          rhoncus. Morbi aliquet sem non orci lacinia posuere nam eget efficitur
+          de milancelos...
+        </div>
+      </div>
+    </section>
+    <!--Tea Bridge end-->
+
+    <section class="tea-collections">
+      <div class="container-fluid">
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-lg-6" style="padding: 0 60px">
+              <div class="zoom-border-effect">
+                <img src="./image/bridge-tea.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <div class="content">
+                  <h3 class="title">East Tea Collection</h3>
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis risus leo, elementum in malesuada an darius ut augue.
+                      Cras sit amet lectus et justo feugiat euismod sed non
+                      erat. Nulla non felis id metus bibendum iaculis quis sit
+                      amet eros.
+                    </p>
+                    <ul>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elito.
+                      </li>
+                      <li>Duis risus leo elementum in malesuada an darius.</li>
+                      <li>Cras sit amet lectus et justo feugiat deuismodo.</li>
+                      <li>
+                        Nulla non felis id metus bibendum iaculis quis sit
+                        ameteros.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="action" style="padding-left: 40px">
+                    <a href="#" class="btn shopButton">Shop East Tea</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rewerse-border" style="margin-top: 100px">
+            <div class="row">
+              <div class="col-lg-6 order-lg-2">
+                <div class="zoom-border-effect">
+                  <img src="./image/bridge.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <div class="content">
+                  <h3 class="title" style="padding-left: 0">
+                    Black Tea Collection
+                  </h3>
+                  <div class="description" style="line-height: 24px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis risus leo, elementum in malesuada an darius ut augue.
+                    Cras sit amet lectus et justo feugiat euismod sed non erat.
+                    Nulla non felis id metus bibendum iaculis quis sit amet
+                    eros. <br /><br />
+                    Cras ultricies nulla porttitor metus cursus malesuada. Sed
+                    convallis tempor ante ac semperos. Duis an turpis de nisl
+                    ultricies rhoncus. Morbi aliquet sem non orci lacinia
+                    posuere nam eget efficitur de milancelos.
+                  </div>
+
+                  <div class="action">
+                    <a href="#" class="btn shopButton">Shop Black Tea</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-style-2" style="margin-top: 100px">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="zoom-border-effect">
+                  <img class="video picture" src="./image/cap teadasd.jpg " alt=" " />
+                </div>
+                <a
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=_9VUPq3SxOc&t=8s"
+                  class="fancybox"
+                >
+                  <i class="far fa-play-circle" style="position: absolute; color: white; font-size: 60px; top: 110%; left: 9%;"></i>
+                </a>
+              </div>
+              <div class="col-lg-6">
+                <div class="backColor">
+                  <div class="details">
+                    <div>
+                      <div class="info-user">
+                        <div class="zoom-border-effect" style="width: 60px; height: 60px;">
+                          <img
+                            class="profil"
+                            src="./image/profil.webp"
+                            alt=""
+                            
+                          />
+                        </div>
+                        <div class="info">
+                          <h4 class="name">Annie Lee</h4>
+                          <i>Tea Taster</i>
+                        </div>
+                      </div>
+                      <h3 class="title">What Makes It Great...</h3>
+                      <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis risus leo, elementum in malesuada an darius ut
+                        augue. Cras sit amet lectus et justo feugiat euismod sed
+                        non erat. Nulla non felis id metus bibendum iaculis quis
+                        sit amet eros. <br /><br />
+                        Cras ultricies nulla porttitor metus cursus malesuada.
+                        Sed convallis tempor ante ac semperos. Duis an turpis de
+                        nisl ultricies rhoncus. Morbi aliquet sem non orci
+                        lacinia posuere nam eget efficitur de milancelos.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Collections section end -->
 
     <!--Footer start-->
-    <footer style="margin-top: 100px">
+    <footer>
       <div class="footer-middle">
         <div class="container">
           <div class="row">
@@ -454,7 +800,7 @@
               <h5 class="footer-heading" id="heading2">About Us</h5>
               <div class="links2">
                 <ul>
-                  <li id="salam"><a href="./blog.html">Blog</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
                   <li><a href="#">Press Releases</a></li>
                   <li><a href="#">About Us</a></li>
                   <li><a href="./contactUs.html">Contact Us</a></li>
@@ -540,12 +886,10 @@
       </div>
     </footer>
     <!--Footer end-->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/main.js
-    "></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
